@@ -4,10 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Heladeria|casrm</title>
 </head>
 
 <body>
+    <nav class="container">
+        <a href="#" class="logo">🍦 Gelato Paradiso</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sabores">Sabores</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#sobre-nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Gelato Paradiso</h1>
+            <p>Los mejores helados artesanales de la ciudad, hechos con amor y ingredientes naturales</p>
+            <a href="#sabores" class="cta-button">Descubre Nuestros Sabores</a>
+        </div>
+    </section>
+
+
+    <!-- Sabores Section -->
+    <section id="sabores" class="sabores">
+        <div class="container">
+            <h2>Nuestros Sabores</h2>
+            <div class="sabores-grid">
+                <div class="sabor-card">
+                    <div class="sabor-icon">🍓</div>
+                    <h3>Fresa Natural</h3>
+                    <p>Helado cremoso con fresas frescas de temporada, sin colorantes artificiales</p>
+                    <div class="precio">S/12.00</div>
+                </div>
+                <div class="sabor-card">
+                    <div class="sabor-icon">🍫</div>
+                    <h3>Chocolate Belga</h3>
+                    <p>Chocolate importado de Bélgica con un 70% de cacao puro</p>
+                    <div class="precio">S/18.00</div>
+                </div>
+                <div class="sabor-card">
+                    <div class="sabor-icon">🥭</div>
+                    <h3>Mango Tropical</h3>
+                    <p>Mango maduro de exportación con un toque de lima fresca</p>
+                    <div class="precio">S/8.50</div>
+                </div>
+                <div class="sabor-card">
+                    <div class="sabor-icon">🍦</div>
+                    <h3>Vainilla Premium</h3>
+                    <p>Vainilla de Madagascar auténtica con semillas naturales</p>
+                    <div class="precio">S/30.00</div>
+                </div>
+                <div class="sabor-card">
+                    <div class="sabor-icon">🥥</div>
+                    <h3>Coco Cremoso</h3>
+                    <p>Leche de coco fresca con ralladura de coco tostado</p>
+                    <div class="precio">S/11.00</div>
+                </div>
+                <div class="sabor-card">
+                    <div class="sabor-icon">🍋</div>
+                    <h3>Limón Refrescante</h3>
+                    <p>Sorbete de limón natural perfecto para días calurosos</p>
+                    <div class="precio">S/4.50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Servicios Section -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio">
+                    <div class="servicio-icon">🚚</div>
+                    <h3>Delivery</h3>
+                    <p>Entrega a domicilio en toda la ciudad con empaques especiales que mantienen la
+                        temperatura perfecta</p>
+                </div>
+                <div class="servicio">
+                    <div class="servicio-icon">🎂</div>
+                    <h3>Tortas Heladas</h3>
+                    <p>Tortas personalizadas para celebraciones especiales con hasta 3 sabores
+                        diferentes</p>
+                </div>
+                <div class="servicio">
+                    <div class="servicio-icon">🎉</div>
+                    <h3>Eventos</h3>
+                    <p>Servicio de helados para fiestas, bodas y eventos corporativos con carritos
+                        móviles</p>
+                </div>
+                <div class="servicio">
+                    <div class="servicio-icon">🏪</div>
+                    <h3>Tienda Física</h3>
+                    <p>Visita nuestra hermosa heladería con ambiente familiar y degustación gratuita</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Sobre Nosotros Section -->
     <section id="sobre-nosotros" class="sobre-nosotros">
         <div class="container">
@@ -15,12 +113,16 @@
             <div class="sobre-content">
                 <div class="sobre-text">
                     <h3>Una tradición familiar desde 2025</h3>
-                    <p>Gelato Paradiso nació del sueño de la familia Risco de traer los auténticos sabores del gelato
-                        peruano a nuestra ciudad. Seguimos utilizando las recetas tradicionales transmitidas de
+                    <p>Gelato Paradiso nació del sueño de la familia Risco de traer los auténticos
+                        sabores del gelato
+                        peruano a nuestra ciudad. Seguimos utilizando las recetas tradicionales
+                        transmitidas de
                         generación en generación.</p>
-                    <p>Nuestro compromiso es ofrecer productos 100% naturales, sin conservantes artificiales, utilizando
+                    <p>Nuestro compromiso es ofrecer productos 100% naturales, sin conservantes
+                        artificiales, utilizando
                         solo los mejores ingredientes importados y frutas locales de temporada.</p>
-                    <p>Cada helado es preparado artesanalmente en pequeñas cantidades diariamente para garantizar la
+                    <p>Cada helado es preparado artesanalmente en pequeñas cantidades diariamente para
+                        garantizar la
                         frescura y calidad que nos caracteriza.</p>
                 </div>
                 <div class="sobre-image">
@@ -30,6 +132,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Contacto Section -->
     <section id="contacto" class="contacto">
@@ -89,10 +193,12 @@
                         </div>
                         <button type="submit" class="submit-btn">Enviar Mensaje</button>
                     </form>
+
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
@@ -111,11 +217,15 @@
                 <div class="footer-section">
                     <h3>Enlaces Rápidos</h3>
                     <ul style="list-style: none; line-height: 2;">
-                        <li><a href="#sabores" style="color: #ecf0f1; text-decoration: none;">Nuestros Sabores</a></li>
-                        <li><a href="#servicios" style="color: #ecf0f1; text-decoration: none;">Servicios</a></li>
-                        <li><a href="#sobre-nosotros" style="color: #ecf0f1; text-decoration: none;">Sobre Nosotros</a>
+                        <li><a href="#sabores" style="color: #ecf0f1; text-decoration: none;">Nuestros
+                                Sabores</a></li>
+                        <li><a href="#servicios" style="color: #ecf0f1; text-decoration: none;">Servicios</a>
                         </li>
-                        <li><a href="#contacto" style="color: #ecf0f1; text-decoration: none;">Contacto</a></li>
+                        <li><a href="#sobre-nosotros" style="color: #ecf0f1; text-decoration: none;">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li><a href="#contacto" style="color: #ecf0f1; text-decoration: none;">Contacto</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -132,5 +242,6 @@
 
     <script src="script.js"></script>
 </body>
+
 
 </html>
