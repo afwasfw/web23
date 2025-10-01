@@ -239,38 +239,42 @@
      color: white;
  }
 
- /* Sobre Nosotros */
- .sobre-nosotros {
-     background: linear-gradient(135deg, #667eea, #764ba2);
-     color: white;
- }
+/* Sobre Nosotros */
+.sobre-nosotros {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
 
- .sobre-content {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     gap: 4rem;
-     align-items: center;
- }
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
 
- .sobre-text {
-     font-size: 1.1rem;
-     line-height: 1.8;
- }
+.sobre-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
 
- .sobre-image {
-     background: rgba(255, 255, 255, 0.1);
-     padding: 2rem;
-     border-radius: 20px;
-     text-align: center;
-     backdrop-filter: blur(10px);
- }
+.sobre-image {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
 
- .sobre-image::before {
-     content: '🍨';
-     font-size: 6rem;
-     display: block;
-     margin-bottom: 1rem;
- }
+/* Imagen usada como icono */
+.icono-helado {
+    width: 250px;           /* tamaño estilo emoji */
+    height: 250px;
+    margin-right: 8px;     /* espacio entre icono y texto */
+    vertical-align: middle; /* lo alinea con la línea de texto */
+    border-radius: 6px;    /* esquinas redondeadas (opcional) */
+}
+
+
 
  /* Contacto */
  .contacto {
